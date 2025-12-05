@@ -1,0 +1,27 @@
+name = "wosb-infocal"
+compatibility_date = "2024-04-01"
+
+[vars]
+UPLOAD_MODE = "hybrid"
+R2_ENDPOINT = "https://45fb3897637b5001c29944a022565c99.r2.cloudflarestorage.com"
+R2_BUCKET = "wosb-uploads"
+
+[[kv_namespaces]]
+binding = "WOSB_SETTINGS"
+id = "WOSB_SETTINGS"
+
+[[kv_namespaces]]
+binding = "WOSB_ITEMS"
+id = "WOSB_ITEMS"
+
+[[kv_namespaces]]
+binding = "WOSB_RESOURCES"
+id = "WOSB_RESOURCES"
+
+[[kv_namespaces]]
+binding = "WOSB_PAGES"
+id = "WOSB_PAGES"
+
+[[r2_buckets]]
+binding = "WOSB_BUCKET"
+bucket_name = "wosb-uploads"
